@@ -1,1 +1,0 @@
-{"id":"432531ab-a7cb-4e1d-8ea0-a0835edfcfca","space":1939,"runtime":"python3.7","name":"cmprxn_test1","path":"ruiqte","project":"b08w48dn","account":"770806618286","region":"us-east-1","deps":["fastapi","pillow","numpy","matplotlib","requests"],"envs":null,"public":true,"log_level":"debug","cron":"","reload_deps":false}

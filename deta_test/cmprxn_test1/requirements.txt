@@ -1,5 +1,0 @@
-fastapi
-pillow
-numpy
-matplotlib
-requests

@@ -1,4 +1,0 @@
-fastapi
-pillow
-numpy
-matplotlib
