@@ -1,0 +1,1 @@
+{"id":"71d80a47-98d1-4a7f-ba1e-71f08b685844","space":1939,"runtime":"python3.7","name":"my_deta_test2","path":"13tbh2","project":"b08w48dn","account":"770806618286","region":"us-east-1","deps":["fastapi","pillow","numpy","matplotlib"],"envs":null,"public":true,"log_level":"debug","cron":"","reload_deps":false}
