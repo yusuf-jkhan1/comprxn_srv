@@ -16,3 +16,4 @@ def compress_image(path: str):
     response_dict = {"Group Assignments": group_assignments, "Centroids": centroids}
     response_dict = {"Centroids": centroids}   
     return response_dict
+
