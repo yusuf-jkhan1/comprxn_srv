@@ -14,7 +14,7 @@ def compress_image(path: str):
     #group_assignments = cmprxr_obj.group_assignment_vect[0:5]
     #centroids = cmprxr_obj.current_centers_vect[0:5]
     #array_head = JSONResponse(my_array[0:5])
-    my_array_str = str(my_array[0:5])
+    my_array_str = str(cmprxr_obj.group_assignment_vect[0:5])
     response_dict = {"Dim": img_utils_obj.status, "Head": my_array_str}  
     return response_dict
 
