@@ -129,6 +129,7 @@ class k_cluster:
 
         self.num_steps = step_i
         self.current_centers_vect = current_centers_vect
+        return current_centers_vect
 
 class img_utils:
 
