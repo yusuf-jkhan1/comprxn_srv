@@ -210,6 +210,7 @@ class img_utils:
         """
         long_array = np.reshape(self.arr, (self.arr.shape[0] * self.arr.shape[1], self.arr.shape[2]))
         self.long_array = long_array
+        self.status = "Here I am"
         return long_array
 
     def rebuild_compressed_image(self, k_cluster_obj):
