@@ -13,7 +13,7 @@ class k_cluster:
 
     seed = 1
 
-    def __init__(self, array, k, n_dim = 3, algo_type = "mediods"):
+    def __init__(self, array, k, n_dim = 3, algo_type = "means"):
         """ """ 
         self.array = array
         self.k = k
