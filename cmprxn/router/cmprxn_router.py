@@ -6,7 +6,7 @@ router = APIRouter()
 
 
 @router.post('/cmprxn_kmeans')
-def compress_image(path):
+def compress_image(path: str):
     img_utils_obj = img_utils(path)
     my_array = img_utils_obj.reshape_img()
     #cmprxr_obj = k_cluster(array=my_array,k=3, algo_type="means")
