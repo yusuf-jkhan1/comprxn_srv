@@ -10,9 +10,9 @@ def compress_image(path: str):
     img_utils_obj = img_utils(path)
     my_array = img_utils_obj.reshape_img()
     cmprxr_obj = k_cluster(array=my_array,k=2, algo_type="means")
-    centers = cmprxr_obj.run()
+    cmprxr_obj.run()
     #group_assignments = cmprxr_obj.group_assignment_vect[0:5]
     #centroids = cmprxr_obj.current_centers_vect[0:5]
-    response_dict = {"Centers": centers}  
+    response_dict = {"Dim": my_array.shape, "Head": my_array[0:5]}  
     return response_dict
 
