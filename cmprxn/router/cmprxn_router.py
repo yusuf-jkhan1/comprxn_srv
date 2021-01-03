@@ -5,6 +5,7 @@ from starlette.responses import JSONResponse
 router = APIRouter()
 
 
+
 @router.post('/cmprxn_kmeans')
 def compress_image(path: str):
     img_utils_obj = img_utils(path)
@@ -15,6 +16,6 @@ def compress_image(path: str):
     #centroids = cmprxr_obj.current_centers_vect[0:5]
     #array_head = JSONResponse(my_array[0:5])
     my_array_str = str(cmprxr_obj.group_assignment_vect)
-    response_dict = {"Dim": img_utils_obj.status, "Head": my_array_str}  
+    response_dict = {"Dim": ['a','b','c'], "Head": my_array_str}  
     return response_dict
 
