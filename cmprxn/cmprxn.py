@@ -35,13 +35,19 @@ class k_cluster:
         assert k < array.shape[0], "Error: More clusters than observations"
 
         #For debugging and reproducibility
-        random.seed(self.seed)
+        #random.seed(self.seed)
 
         #Initialize k Cluster Center Indexes by sample from range of array length without replacement
-        c_vect_inds = random.sample(range(array.shape[0]),k)
+        #c_vect_inds = random.sample(range(array.shape[0]),k)
         #Retrieve 'center' vectors
-        c_vect = array[c_vect_inds]
+        #c_vect = array[c_vect_inds]
         
+        mean_val = np.mean(array, axis=0).round()
+        upper_q_val = np.percentile(array, q= 75, axis= 0).round()
+        lower_q_val = np.percentile(array, q= 25, axis= 0).round()
+        
+        c_vect = [mean_val, upper_q_val, lower_q_val]
+
         return c_vect
 
     def _allocation(self, array, c_vect):
