@@ -213,18 +213,17 @@ class img_utils:
         self.status = "Here I am"
         return long_array
 
-    def rebuild_compressed_image(self, k_cluster_obj):
+    def rebuild_compressed_image(self, centroids, labels):
         """Takes k_cluster object and displays the compressed image"""
         
-        centers = k_cluster_obj.current_centers_vect
-        class_assignments = k_cluster_obj.group_assignment_vect
+        centers = centroids
+        class_assignments = labels
         original_array = self.arr
 
-        centers_list = [x.tolist() for x in centers]
         class_assignment_list = [x for x in np.unique(class_assignments)]
 
         centroids_dict = {}
-        for center,class_ in zip(centers_list,class_assignment_list):
+        for center,class_ in zip(centers,class_assignment_list):
             centroids_dict[class_] = center
 
         long_array = self.long_array
