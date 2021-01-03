@@ -16,7 +16,7 @@ In this scenario, coded a k-means (EM) algorithm from scratch and hosted the com
 
 **Compressed Image**
 
-![Compressed](https://github.com/yusuf-jkhan1/comprxn_srv/blob/main/data/compressed_smiley.png)
+![Compressed](https://raw.githubusercontent.com/yusuf-jkhan1/comprxn_srv/master/data/compressed_smiley.png?token=ARM7WNDTAGOGLW6S5PMUA5C76IZHM)
 
 > More details and improvements to come.
 
